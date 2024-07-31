@@ -7,9 +7,12 @@ import { Link } from 'expo-router';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Readr</Text>
+      <Text style={{fontSize: 24, fontWeight: 'bold'}}>Readr </Text>
       <StatusBar style="auto" />
       <Link href="/profile" style={{color: 'blue'}}> My Profile</Link>
+      <Link href="/stats" style={{color: 'blue'}}> My Stats</Link>
+      <Link href="/book_club" style={{color: 'blue'}}> My Book Clubs</Link>
+      <Link href="/create_club" style={{color: 'blue'}}> Create A Club</Link>
     </View>
   );
 }
