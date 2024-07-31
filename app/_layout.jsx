@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import { Slot, Stack } from 'expo-router'
+//slot allows you to render different screens
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+//this is a page that is routed to
+//use rnfes to get the templates (es7+ installed)
+const RootLayout = () => {
+  return(
+    <Stack>
+      <Stack.Screen name ="index" options={{ headerShown: false}}/>
+    </Stack>
+  ) 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default RootLayout
