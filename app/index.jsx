@@ -31,7 +31,7 @@ export default function App() {
           {/*this is the intro text at the top */}
           <View style={styles.content}>
             <Text style={{fontSize: 28, fontWeight: 'bold'}}> Welcome to Readr </Text>
-            <Text style={{fontSize: 18, fontWeight: 'light'}}> Sign up or Login to get started </Text>
+            <Text style={{fontSize: 18, fontWeight: 'light'}}> Pick up where you left off. </Text>
           </View>
           {/*this is the scrolls, there is the book clubs and the stats boxes */}
           <View style={styles.greenSquare}>
@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
          backgroundColor: '#FFF8E7'
     },
       
-    searchConatiner: {
-      width: '90%',
+    searchContainer: {
+      width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -75,8 +75,6 @@ const styles = StyleSheet.create({
       width: '90%',
       padding: 7,
       paddingLeft: 25,
-      borderWidth: 1,
-      borderColor: '#767680',
       borderRadius: 15,
       marginBottom: 60,
       marginLeft: 20,
